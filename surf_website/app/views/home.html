@@ -1,0 +1,149 @@
+
+<div class="container" ng-controller="IndexController">
+
+
+    <div class="row ">
+
+
+        <div class="col-xs-offset-3">
+
+            <h3>Filters</h3>
+
+        </div>
+
+        <div class="row-filter col-xs-offset-3">
+
+
+            <select  name="" id="input" >
+                <option value="">Country</option>
+                <option value=""></option>
+            </select>
+
+
+            <select  name="" id="input" >
+                <option value="">Type</option>
+                <option value=""></option>
+            </select>
+
+
+            <select  name="" id="input" >
+                <option value="">Best Season</option>
+                <option value=""></option>
+            </select>
+
+            <select   name="" id="input" >
+                <option value="">Nigth Life</option>
+                <option value=""></option>
+            </select>
+
+            <select  name="" id="input" >
+                <option value="">Wave Length</option>
+                <option value=""></option>
+            </select>
+
+        </div>
+
+        <div class="row-filter col-xs-offset-3">
+
+            <select name="" id="input" >
+                <option value="">Direction</option>
+                <option value=""></option>
+            </select>
+
+
+            <select name="" id="input" >
+                <option value="">Bottom</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">Crowd</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">Beast Tide</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">Access</option>
+                <option value=""></option>
+            </select>
+
+        </div>
+
+
+        <div class="row-filter col-xs-offset-3">
+
+            <select name="" id="input" >
+                <option value="">Weather</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">Temperature</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">Consistency</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">WetSuit?</option>
+                <option value=""></option>
+            </select>
+
+            <select name="" id="input" >
+                <option value="">AVG $</option>
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="row-filter col-xs-offset-3">
+
+            <button type="button" class="btn btn-primary">Search</button>
+            <button type="button" class="btn btn-primary">Reset Filters</button>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="filter-search">
+        
+        <div ng-show="!showSearch">
+            
+            {{message}}
+        </div>
+        
+        
+
+
+        <ul class="media-list"  ng-show="showSearch" >
+            <li class="media inner-filter-search" data-ng-repeat="surfspot in surfspots">
+                <div class="media-left">
+                    <a href="#">
+                        
+                        <img src="{{surfspot.image}}" class="img-rounded" alt="{{surfspot.name}}" width="200" height="200">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">{{surfspot.name}}</h3>
+                    <p>{{surfspot.description}}</p>
+                    <button type="button" class="btn btn-primary">Lern More</button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    
+
+
+
+
+</div>

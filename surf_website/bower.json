@@ -1,0 +1,32 @@
+{
+  "name": "template_angular_website",
+  "authors": [
+    "toni <toni7858@gmail.com>"
+  ],
+  "description": "template for angular websites",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "template",
+    "angular",
+    "website"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.8",
+    "angular-mocks": "~1.4.8",
+    "bootstrap-social": "~4.12.0"
+  }
+}
